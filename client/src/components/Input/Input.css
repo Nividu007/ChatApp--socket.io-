@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  border-top: 2px solid #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+}
+
+.emojiPickerContainer {
+  position: absolute;
+  left: 1%; 
+  overflow-y: auto;
+  bottom: 90%;
+}
+
+
+.emojiPickerOverlay {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  
+}
+
+.input {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 70%;
+  font-size: 1.2em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.input:focus {
+  box-shadow: 0 0 20px rgba(41, 121, 255, 0.5);
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979FF;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  width: 10%;
+  border-radius: 20px;
+  margin-left: 2%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-size: 20px;
+}
+
+.sendButton:hover {
+  box-shadow: 0 0 20px rgba(41, 121, 255, 0.5);
+  cursor: pointer;
+}
+
+.emojiButton {
+  margin-right: 3%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(208, 208, 208);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  line-height: 1;
+  position: relative; 
+  z-index: 2; 
+}
+
+.emojiButton:hover {
+  box-shadow: 0 0 20px rgba(41, 121, 255, 0.5);
+  cursor: pointer;
+}
