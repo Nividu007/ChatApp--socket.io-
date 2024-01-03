@@ -17,7 +17,10 @@ const io = socketio(server, {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+<<<<<<< HEAD
 app.use(cors());
+=======
+>>>>>>> 341b47b599c59acee626adf41bb0273bd323381e
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'POST');
@@ -70,5 +73,9 @@ io.on('connection', (socket) => {
   });
 });
 
+<<<<<<< HEAD
 const PORT = process.env.PORT || PORT;
+=======
+const PORT = process.env.PORT || 5000;
+>>>>>>> 341b47b599c59acee626adf41bb0273bd323381e
 server.listen(PORT, () => console.log(`Server has started on port ${PORT}`));
