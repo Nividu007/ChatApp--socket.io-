@@ -39,7 +39,7 @@ const Login = ({ userIdCallback, userNameCallback, SignedIn }) => {
   function loginSubmit() {
     if (name !== "" && password !== "") {
       try {
-        axios.post(`http://localhost:5000/auth/login`, { name, password })
+        axios.post(`https://chatapp-rdmt.onrender.com/auth/login`, { name, password })
           .then((response) => {
             if (response && response.data) {
               const result = response.data;

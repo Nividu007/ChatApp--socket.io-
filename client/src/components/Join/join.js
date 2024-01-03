@@ -14,7 +14,7 @@ const Join = ({ name }) => {
     if (room !== '') {
       let roomName = encodeURIComponent(room);
       try {
-        axios.post(`http://localhost:5000/auth/join`, { room: roomName })
+        axios.post(`https://chatapp-rdmt.onrender.com/auth/join`, { room: roomName })
           .then((response) => {
             const result = response.data;
   
@@ -43,7 +43,7 @@ const Join = ({ name }) => {
     if (room !== '') {
       let roomName = encodeURIComponent(room);
       try {
-        axios.post(`http://localhost:5000/auth/create`, { room: roomName })
+        axios.post(`https://chatapp-rdmt.onrender.com/auth/create`, { room: roomName })
         .then((response) => {
             const result = response.data;
 

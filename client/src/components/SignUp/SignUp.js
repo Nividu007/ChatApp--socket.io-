@@ -19,7 +19,7 @@ function SignUp() {
     } else {
       try {
         
-        await axios.post(`http://localhost:5000/auth/signup`, { name, password });
+        await axios.post(`https://chatapp-rdmt.onrender.com/auth/signup`, { name, password });
 
         setTimeout(function () {
           window.location.href = "http://localhost:3000/";

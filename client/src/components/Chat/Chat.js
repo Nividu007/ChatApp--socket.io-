@@ -11,7 +11,7 @@ import Input from "../Input/Input";
 import Messages from "../Messages/Messages";
 import SideBar from "../SideBar/SideBar";
 
-const ENDPOINT = 'localhost:5000';
+const ENDPOINT = 'https://chatapp-rdmt.onrender.com';
 
 let socket;
 
@@ -42,7 +42,7 @@ const Chat = ({back, userId}) => {
 
     if (roomId !== '') {
       try {
-        axios.post(`http://localhost:5000/auth/load`, { roomId })
+        axios.post(`https://chatapp-rdmt.onrender.com/auth/load`, { roomId })
           .then((response) => {
             const result = response.data;
             console.log(result.message);
@@ -87,7 +87,7 @@ const Chat = ({back, userId}) => {
           text: message
         };
           try {
-            await axios.post(`http://localhost:5000/auth/contentUpdate`, msg)
+            await axios.post(`https://chatapp-rdmt.onrender.com/auth/contentUpdate`, msg)
           } catch (error) {
             console.log(error)
           }
