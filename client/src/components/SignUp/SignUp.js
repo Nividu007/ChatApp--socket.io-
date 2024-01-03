@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import './SignUp.css';
 
@@ -8,6 +9,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -22,7 +24,7 @@ function SignUp() {
         await axios.post(`https://chatapp-rdmt.onrender.com/auth/signup`, { name, password });
 
         setTimeout(function () {
-          window.location.href = "/";
+          navigate('/');
         },2000);
 
         setMsg("Successfully Registered! Redirecting...");
