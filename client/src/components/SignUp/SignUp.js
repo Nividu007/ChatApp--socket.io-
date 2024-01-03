@@ -22,7 +22,7 @@ function SignUp() {
         await axios.post(`https://chatapp-rdmt.onrender.com/auth/signup`, { name, password });
 
         setTimeout(function () {
-          window.location.href = "http://localhost:3000/";
+          window.location.href = "/";
         },2000);
 
         setMsg("Successfully Registered! Redirecting...");
