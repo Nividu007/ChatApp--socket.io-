@@ -78,6 +78,8 @@ html, body {
 .creator {
   bottom: 0;
   right: 0;
+  color: white;
+  text-align: right;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
