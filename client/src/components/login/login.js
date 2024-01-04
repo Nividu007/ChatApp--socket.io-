@@ -72,6 +72,7 @@ const Login = ({ userIdCallback, userNameCallback, SignedIn }) => {
   }  
   
   return (
+    <div className='con'>
     <div className="loginOuterContainer">
       <div className="loginInnerContainer">
         <h1 className="heading">Login</h1>
@@ -96,6 +97,7 @@ const Login = ({ userIdCallback, userNameCallback, SignedIn }) => {
           </Link>
           <a className="signup" href='/SignUp'>Not Registered?</a>      
       </div>
+    </div>
       <div className='creator'><h3>Created By Hirosh Nividu</h3></div>
     </div>
   )
