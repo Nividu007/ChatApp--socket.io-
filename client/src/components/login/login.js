@@ -96,6 +96,7 @@ const Login = ({ userIdCallback, userNameCallback, SignedIn }) => {
           </Link>
           <a className="signup" href='/SignUp'>Not Registered?</a>      
       </div>
+      <div className='creator'><h3>Created By Hirosh Nividu</h3></div>
     </div>
   )
   

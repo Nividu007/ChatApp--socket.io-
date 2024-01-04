@@ -75,6 +75,11 @@ html, body {
   color: red;
 }
 
+.creator {
+  bottom: 0;
+  right: 0;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .loginOuterContainer {
     height: 100%;
