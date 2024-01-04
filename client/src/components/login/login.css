@@ -77,9 +77,9 @@ html, body {
 
 .creator {
   bottom: 0;
-  right: 0;
+  right: 50%;
   color: white;
-  text-align: right;
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
